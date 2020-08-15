@@ -1,0 +1,154 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    font-size: 16px;
+}
+
+.page-container {
+    background-color: lightgray;
+}
+
+main {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.forms {
+    max-width: 70%;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 300;
+    font-size: .9rem;
+}
+
+a:hover {
+    color: #35425B;
+}
+
+#header {
+    background-image: url(../images/bg.jpg);
+    /* background-color: rgba(24, 44, 77, 0.6); */
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    height: 300px;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.layer {
+    background-color: rgba(24, 44, 77, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+header h1 {
+    font-weight: 300;
+}
+
+header h3 {
+    font-weight: 200;
+    font-style: italic;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+nav ul li {
+    list-style-type: none;
+    margin-top: 15px;
+    margin-right: 15px;
+}
+
+legend {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h2 {
+    font-weight: 400;
+    text-shadow: 2px 2px 4px gray;
+    margin-bottom: 15px;
+}
+
+#about {
+    margin-bottom: 50px;
+}
+
+.forms {
+    background-color: #fff;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+
+.label {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+label {
+    margin-bottom: 5px;
+    font-size: .9rem;
+}
+
+input {
+    padding: 5px;
+    outline-color: #6B88F0;
+}
+
+fieldset {
+    border: none;
+}
+
+button {
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #6B88F0;
+    color: white;
+}
+
+button:hover {
+    opacity: .8;
+}
+
+@media (min-width: 900px) {
+    nav ul {
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+    main {
+        max-width: 50%;
+    }
+
+    legend {
+        margin-bottom: 0;
+    }
+
+    .forms {
+        margin-top: 20px;
+    }
+}
